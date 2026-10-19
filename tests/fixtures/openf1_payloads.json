@@ -1,0 +1,84 @@
+{
+  "drivers": [
+    {"driver_number": 1, "broadcast_name": "M VERSTAPPEN", "full_name": "Max VERSTAPPEN", "name_acronym": "VER", "team_name": "Red Bull Racing", "team_colour": "3671C6", "headshot_url": null, "country_code": "NED", "session_key": 9161, "meeting_key": 1219},
+    {"driver_number": 11, "broadcast_name": "S PEREZ", "full_name": "Sergio PEREZ", "name_acronym": "PER", "team_name": "Red Bull Racing", "team_colour": "3671C6", "headshot_url": null, "country_code": "MEX", "session_key": 9161, "meeting_key": 1219},
+    {"driver_number": 16, "broadcast_name": "C LECLERC", "full_name": "Charles LECLERC", "name_acronym": "LEC", "team_name": "Ferrari", "team_colour": null, "headshot_url": null, "country_code": "MON", "session_key": 9161, "meeting_key": 1219}
+  ],
+  "session_result_race": [
+    {"position": 1, "driver_number": 16, "number_of_laps": 3, "dnf": false, "dns": false, "dsq": false, "duration": 5400.123, "gap_to_leader": 0, "session_key": 9161, "meeting_key": 1219},
+    {"position": 2, "driver_number": 1, "number_of_laps": 3, "dnf": false, "dns": false, "dsq": false, "duration": 5405.5, "gap_to_leader": 5.377, "session_key": 9161, "meeting_key": 1219},
+    {"position": null, "driver_number": 11, "number_of_laps": 1, "dnf": true, "dns": false, "dsq": false, "duration": null, "gap_to_leader": "+2 LAPS", "session_key": 9161, "meeting_key": 1219}
+  ],
+  "session_result_quali": [
+    {"position": 1, "driver_number": 1, "number_of_laps": 18, "dnf": false, "dns": false, "dsq": false, "duration": [92.1, 91.5, 90.9], "gap_to_leader": [0.0, 0.0, 0.0], "session_key": 9160, "meeting_key": 1219},
+    {"position": 2, "driver_number": 16, "number_of_laps": 18, "dnf": false, "dns": false, "dsq": false, "duration": [92.3, 91.4, 91.2], "gap_to_leader": [0.2, -0.1, 0.3], "session_key": 9160, "meeting_key": 1219},
+    {"position": 3, "driver_number": 11, "number_of_laps": 6, "dnf": false, "dns": false, "dsq": false, "duration": [92.8, null, null], "gap_to_leader": [0.7, null, null], "session_key": 9160, "meeting_key": 1219}
+  ],
+  "starting_grid": [
+    {"position": 1, "driver_number": 1, "lap_duration": 90.9, "session_key": 9161, "meeting_key": 1219},
+    {"position": 2, "driver_number": 16, "lap_duration": 91.2, "session_key": 9161, "meeting_key": 1219},
+    {"position": 3, "driver_number": 11, "lap_duration": 92.8, "session_key": 9161, "meeting_key": 1219}
+  ],
+  "laps": [
+    {"driver_number": 1, "lap_number": 1, "date_start": null, "lap_duration": null, "duration_sector_1": null, "duration_sector_2": 40.1, "duration_sector_3": 30.2, "is_pit_out_lap": false, "segments_sector_1": [2048, 2049], "session_key": 9161},
+    {"driver_number": 1, "lap_number": 2, "date_start": "2023-09-17T12:03:00.000000+00:00", "lap_duration": 95.0, "duration_sector_1": 25.0, "duration_sector_2": 40.0, "duration_sector_3": 30.0, "is_pit_out_lap": false, "segments_sector_1": [2049, 2049], "session_key": 9161},
+    {"driver_number": 1, "lap_number": 3, "date_start": "2023-09-17T12:04:35.000000+00:00", "lap_duration": 120.0, "duration_sector_1": 35.0, "duration_sector_2": 50.0, "duration_sector_3": 35.0, "is_pit_out_lap": true, "segments_sector_1": [2064, 2049], "session_key": 9161},
+    {"driver_number": 16, "lap_number": 1, "date_start": "2023-09-17T12:01:28.000000+00:00", "lap_duration": 96.0, "duration_sector_1": 25.5, "duration_sector_2": 40.3, "duration_sector_3": 30.2, "is_pit_out_lap": false, "segments_sector_1": [2051, 2049], "session_key": 9161},
+    {"driver_number": 16, "lap_number": 2, "date_start": "2023-09-17T12:03:04.000000+00:00", "lap_duration": 94.5, "duration_sector_1": 24.8, "duration_sector_2": 39.9, "duration_sector_3": 29.8, "is_pit_out_lap": false, "segments_sector_1": [2051, 2051], "session_key": 9161},
+    {"driver_number": 16, "lap_number": 3, "date_start": "2023-09-17T12:04:38.500000+00:00", "lap_duration": 94.8, "duration_sector_1": 24.9, "duration_sector_2": 40.0, "duration_sector_3": 29.9, "is_pit_out_lap": false, "segments_sector_1": [2049, 2049], "session_key": 9161}
+  ],
+  "stints": [
+    {"driver_number": 1, "stint_number": 1, "compound": "MEDIUM", "lap_start": 1, "lap_end": 2, "tyre_age_at_start": 0, "session_key": 9161},
+    {"driver_number": 1, "stint_number": 2, "compound": "HARD", "lap_start": 3, "lap_end": null, "tyre_age_at_start": 3, "session_key": 9161},
+    {"driver_number": 16, "stint_number": 1, "compound": "SOFT", "lap_start": 1, "lap_end": 3, "tyre_age_at_start": 2, "session_key": 9161}
+  ],
+  "pit": [
+    {"driver_number": 1, "lap_number": 2, "lane_duration": 22.5, "pit_duration": 22.5, "stop_duration": 2.4, "date": "2023-09-17T12:04:30+00:00", "session_key": 9161},
+    {"driver_number": 11, "lap_number": 1, "lane_duration": null, "pit_duration": 30.1, "date": "2023-09-17T12:02:50+00:00", "session_key": 9161}
+  ],
+  "position": [
+    {"driver_number": 1, "position": 1, "date": "2023-09-17T12:00:00+00:00", "session_key": 9161},
+    {"driver_number": 16, "position": 2, "date": "2023-09-17T12:00:00+00:00", "session_key": 9161},
+    {"driver_number": 16, "position": 1, "date": "2023-09-17T12:04:40+00:00", "session_key": 9161},
+    {"driver_number": 1, "position": 2, "date": "2023-09-17T12:04:40+00:00", "session_key": 9161}
+  ],
+  "intervals": [
+    {"driver_number": 16, "gap_to_leader": null, "interval": null, "date": "2023-09-17T12:05:00+00:00", "session_key": 9161},
+    {"driver_number": 1, "gap_to_leader": 1.234, "interval": 1.234, "date": "2023-09-17T12:05:01+00:00", "session_key": 9161},
+    {"driver_number": 11, "gap_to_leader": "+1 LAP", "interval": "+1 LAP", "date": "2023-09-17T12:05:02+00:00", "session_key": 9161}
+  ],
+  "car_data": [
+    {"driver_number": 1, "date": "2023-09-17T12:03:00.500000+00:00", "speed": 108, "throttle": 100, "brake": 0, "n_gear": 4, "rpm": 10000, "drs": 12, "session_key": 9161},
+    {"driver_number": 1, "date": "2023-09-17T12:03:00+00:00", "speed": 72, "throttle": 90, "brake": 0, "n_gear": 3, "rpm": 9000, "drs": 0, "session_key": 9161},
+    {"driver_number": 1, "date": "2023-09-17T12:03:01+00:00", "speed": 144, "throttle": 0, "brake": 100, "n_gear": 5, "rpm": 11000, "drs": 3, "session_key": 9161}
+  ],
+  "location": [
+    {"driver_number": 1, "date": "2023-09-17T12:03:00.100000+00:00", "x": 10, "y": 20, "z": 0, "session_key": 9161},
+    {"driver_number": 1, "date": "2023-09-17T12:03:00.600000+00:00", "x": 15, "y": 25, "z": 0, "session_key": 9161}
+  ],
+  "weather": [
+    {"date": "2023-09-17T12:01:00+00:00", "air_temperature": 30.1, "track_temperature": 40.5, "humidity": 70, "pressure": 1008, "rainfall": 0, "wind_direction": 180, "wind_speed": 1.2, "session_key": 9161},
+    {"date": "2023-09-17T12:00:00+00:00", "air_temperature": 29.5, "track_temperature": 42.0, "humidity": 72, "pressure": 1008, "rainfall": 1, "wind_direction": 170, "wind_speed": 1.0, "session_key": 9161}
+  ],
+  "race_control": [
+    {"date": "2023-09-17T12:00:00+00:00", "lap_number": 1, "category": "Flag", "flag": "GREEN", "scope": "Track", "sector": null, "driver_number": null, "message": "GREEN LIGHT - PIT EXIT OPEN"},
+    {"date": "2023-09-17T12:02:00+00:00", "lap_number": 1, "category": "Flag", "flag": "YELLOW", "scope": "Sector", "sector": 5, "driver_number": null, "message": "YELLOW IN TRACK SECTOR 5"},
+    {"date": "2023-09-17T12:03:00+00:00", "lap_number": 2, "category": "SafetyCar", "flag": null, "scope": null, "sector": null, "driver_number": null, "message": "SAFETY CAR DEPLOYED"},
+    {"date": "2023-09-17T12:01:00+00:00", "lap_number": 1, "category": "Flag", "flag": "BLACK AND WHITE", "scope": "Driver", "sector": null, "driver_number": 1, "message": "BLACK AND WHITE FLAG FOR CAR 1"}
+  ],
+  "meetings": [
+    {"meeting_key": 1219, "meeting_name": "Singapore Grand Prix", "country_name": "Singapore", "location": "Marina Bay", "circuit_short_name": "Singapore", "circuit_type": "Temporary - Street", "date_start": "2023-09-15T09:30:00+00:00", "date_end": "2023-09-17T14:00:00+00:00", "is_cancelled": false, "year": 2023},
+    {"meeting_key": 1140, "meeting_name": "Pre-Season Testing", "country_name": "Bahrain", "location": "Sakhir", "circuit_short_name": "Sakhir", "circuit_type": "Permanent", "date_start": "2023-02-23T07:00:00+00:00", "date_end": "2023-02-25T16:00:00+00:00", "is_cancelled": false, "year": 2023},
+    {"meeting_key": 1300, "meeting_name": "Future Grand Prix", "country_name": "Nowhere", "location": "X", "circuit_short_name": "X", "circuit_type": "Permanent", "date_start": "2099-01-01T00:00:00+00:00", "date_end": "2099-01-03T00:00:00+00:00", "is_cancelled": true, "year": 2023}
+  ],
+  "sessions": [
+    {"session_key": 9161, "session_name": "Race", "session_type": "Race", "meeting_key": 1219, "date_start": "2023-09-17T12:00:00+00:00", "date_end": "2023-09-17T14:00:00+00:00", "is_cancelled": false, "year": 2023},
+    {"session_key": 9160, "session_name": "Qualifying", "session_type": "Qualifying", "meeting_key": 1219, "date_start": "2023-09-16T13:00:00+00:00", "date_end": "2023-09-16T14:00:00+00:00", "is_cancelled": false, "year": 2023},
+    {"session_key": 9159, "session_name": "Sprint", "session_type": "Race", "meeting_key": 1219, "date_start": "2023-09-16T09:00:00+00:00", "date_end": "2023-09-16T10:00:00+00:00", "is_cancelled": true, "year": 2023},
+    {"session_key": 9999, "session_name": "Race", "session_type": "Race", "meeting_key": 1300, "date_start": "2099-01-03T00:00:00+00:00", "date_end": "2099-01-03T02:00:00+00:00", "is_cancelled": false, "year": 2023}
+  ],
+  "championship_drivers": [
+    {"driver_number": 1, "points_start": 374, "points_current": 392, "position_start": 1, "position_current": 1, "session_key": 9161},
+    {"driver_number": 16, "points_start": 99, "points_current": 124, "position_start": 5, "position_current": 4, "session_key": 9161}
+  ]
+}

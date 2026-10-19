@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+
+      - name: Instalar Poetry
+        run: pipx install poetry
+
+      - name: Instalar dependências
+        run: |
+          poetry config virtualenvs.in-project true
+          poetry install --with docs
+
+      - name: Validar lock
+        run: poetry check --lock
+
+      - name: Ruff (lint)
+        run: poetry run ruff check .
+
+      - name: Ruff (formatação)
+        run: poetry run ruff format --check .
+
+      - name: Testes + cobertura
+        run: poetry run pytest
+
+      - name: Documentação
+        run: poetry run mkdocs build --strict
