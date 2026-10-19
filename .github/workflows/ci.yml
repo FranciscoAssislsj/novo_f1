@@ -6,7 +6,58 @@ on:
   pull_request:
 
 jobs:
-  quality:
+  lint:
+    name: Lint & Format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+
+      - name: Instalar Poetry
+        run: pipx install poetry
+
+      - name: Instalar dependências
+        run: |
+          poetry config virtualenvs.in-project true
+          poetry install
+
+      - name: Validar lock
+        run: poetry check --lock
+
+      - name: Ruff (lint)
+        run: poetry run ruff check .
+
+      - name: Ruff (formatação)
+        run: poetry run ruff format --check .
+
+  test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+
+      - name: Instalar Poetry
+        run: pipx install poetry
+
+      - name: Instalar dependências
+        run: |
+          poetry config virtualenvs.in-project true
+          poetry install
+
+      - name: Testes + cobertura
+        run: poetry run pytest
+
+  docs:
+    name: Deploy Docs
+    # Só roda se lint e testes passarem.
+    needs: [lint, test]
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -24,18 +75,6 @@ jobs:
         run: |
           poetry config virtualenvs.in-project true
           poetry install --with docs
-
-      - name: Validar lock
-        run: poetry check --lock
-
-      - name: Ruff (lint)
-        run: poetry run ruff check .
-
-      - name: Ruff (formatação)
-        run: poetry run ruff format --check .
-
-      - name: Testes + cobertura
-        run: poetry run pytest
 
       - name: Documentação (validação)
         if: github.event_name == 'pull_request'
