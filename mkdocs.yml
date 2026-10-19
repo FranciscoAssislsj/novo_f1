@@ -1,0 +1,49 @@
+site_name: Novo F1
+site_description: Dashboard Streamlit de dados históricos da OpenF1 com cache em Parquet.
+site_author: Francisco de Assis
+repo_url: https://github.com/FranciscoAssislsj/novo_f1
+repo_name: FranciscoAssislsj/novo_f1
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.sections
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+
+nav:
+  - Início: index.md
+  - Instalação: installation.md
+  - Uso: usage.md
+  - Arquitetura: architecture.md
+  - Referência: reference.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: google
+            show_source: false
